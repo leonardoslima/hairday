@@ -13,7 +13,7 @@ const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
 selectedDate.value = inputToday;
 selectedDate.min = inputToday;
 
-form.submit = async (event) => {
+form.onsubmit = async (event) => {
   // Previne o comportamento padrão de carregar a página.
   event.preventDefault();
 
